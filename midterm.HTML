@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Patel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">HTML5</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+            </div>
+            <div class="nav-right">
+                <button data-bs-theme-value="dark" onclick="setDarkMode()">Dark</button>
+                <button data-bs-theme-value="light" onclick="setLightMode()">Light</button>
+                <button>Contact Me</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- First Row -->
+            <div class="row">
+                <div class="column left">
+                    <p>Enter a number to calculate its factorial:</p>
+                </div>
+                <div class="column right">
+                    <input type="number" id="factorialInput" min="0" placeholder="Enter a number">
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="row">
+                <div class="column left">
+                    <button id="calculateBtn" onclick="calculateFactorial()">Enter</button>
+                </div>
+                <div class="column right">
+                    <div id="resultScreen">Result will appear here</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shreya Patel. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
