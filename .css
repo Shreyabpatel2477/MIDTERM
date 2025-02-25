@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-left a, .nav-right button {
+    color: white;
+    background: none;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-left a:hover, .nav-right button:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Row Layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Column Layout */
+.column {
+    padding: 10px;
+}
+
+.left {
+    width: 30%;
+    text-align: right;
+}
+
+.right {
+    width: 70%;
+}
+
+/* Input Field */
+input {
+    width: 100%;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+/* Button */
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Result Screen */
+#resultScreen {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #332703;
+    color: white;
+    text-align: center;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}

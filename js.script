@@ -1,0 +1,27 @@
+// Function to calculate factorial
+function calculateFactorial() {
+    let num = document.getElementById("factorialInput").value;
+    let resultScreen = document.getElementById("resultScreen");
+
+    if (num === "" || num < 0) {
+        resultScreen.textContent = "Please enter a valid number!";
+        return;
+    }
+
+    let factorial = 1;
+    for (let i = 1; i <= num; i++) {
+        factorial *= i;
+    }
+
+    resultScreen.textContent = `${num}! = ${factorial}`;
+}
+
+// Function to enable dark mode
+function setDarkMode() {
+    document.body.classList.add("dark-mode");
+}
+
+// Function to enable light mode
+function setLightMode() {
+    document.body.classList.remove("dark-mode");
+}
